@@ -5,7 +5,7 @@ public class SceneManagement : MonoBehaviour
 {
     public void GameScene()
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("GameplayScene");
     }
    
     public void OptionsScene()
@@ -20,7 +20,7 @@ public class SceneManagement : MonoBehaviour
    
     public void ReturnToMenuScene()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     public void Exit()
