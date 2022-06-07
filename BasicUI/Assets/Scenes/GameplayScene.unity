@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 36950188}
   - component: {fileID: 36950187}
   - component: {fileID: 36950186}
-  - component: {fileID: 36950189}
   m_Layer: 5
   m_Name: Toggle Panel Button
   m_TagString: Untagged
@@ -208,8 +207,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1248107358}
-        m_TargetAssemblyTypeName: ShowHidePanel, Assembly-CSharp
+      - m_Target: {fileID: 1565557731}
+        m_TargetAssemblyTypeName: ShowHideUI, Assembly-CSharp
         m_MethodName: EnablePanel
         m_Mode: 1
         m_Arguments:
@@ -258,19 +257,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36950184}
   m_CullTransparentMesh: 1
---- !u!114 &36950189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36950184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1 &138787935
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +933,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1248107357}
   - component: {fileID: 1248107356}
-  - component: {fileID: 1248107358}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -982,19 +967,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1248107358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248107355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e58236139d7be3f4283a53678d4be48b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 1697285074}
 --- !u!1 &1344811313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,8 +1185,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1248107358}
-        m_TargetAssemblyTypeName: ShowHidePanel, Assembly-CSharp
+      - m_Target: {fileID: 1565557731}
+        m_TargetAssemblyTypeName: ShowHideUI, Assembly-CSharp
         m_MethodName: DisablePanel
         m_Mode: 1
         m_Arguments:
@@ -1263,6 +1235,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547969194}
   m_CullTransparentMesh: 1
+--- !u!1 &1565557729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1565557732}
+  - component: {fileID: 1565557731}
+  m_Layer: 5
+  m_Name: Pause Panel Interaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1565557731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565557729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58236139d7be3f4283a53678d4be48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiObject: {fileID: 1697285074}
+--- !u!4 &1565557732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565557729}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.011823656, y: 0.011823656, z: 0.011823656}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1697285074
 GameObject:
   m_ObjectHideFlags: 0
